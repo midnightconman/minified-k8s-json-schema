@@ -159,7 +159,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -225,7 +226,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -259,7 +261,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "spec": {
       "description": "TokenReviewSpec is a description of the token authentication request.",
@@ -288,7 +291,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "status": {
       "description": "TokenReviewStatus is the result of the token authentication request.",
@@ -373,13 +377,15 @@
           "type": [
             "object",
             "null"
-          ]
+          ],
+          "additionalProperties": false
         }
       },
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -393,5 +399,6 @@
       "version": "v1beta1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

@@ -159,7 +159,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -225,7 +226,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -259,7 +261,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "spec": {
       "description": "IngressSpec describes the Ingress the user wishes to exist.",
@@ -293,7 +296,8 @@
               "type": [
                 "object",
                 "null"
-              ]
+              ],
+              "additionalProperties": false
             },
             "serviceName": {
               "description": "Specifies the name of the referenced service.",
@@ -322,7 +326,8 @@
           "type": [
             "object",
             "null"
-          ]
+          ],
+          "additionalProperties": false
         },
         "ingressClassName": {
           "description": "IngressClassName is the name of the IngressClass cluster resource. The associated IngressClass defines which controller will implement the resource. This replaces the deprecated `kubernetes.io/ingress.class` annotation. For backwards compatibility, when that annotation is set, it must be given precedence over this field. The controller may emit a warning if the field and annotation have different values. Implementations of this API should ignore Ingresses without a class specified. An IngressClass resource may be marked as default, which can be used to set a default value for this field. For more information, refer to the IngressClass documentation.",
@@ -380,7 +385,8 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             },
                             "serviceName": {
                               "description": "Specifies the name of the referenced service.",
@@ -406,7 +412,8 @@
                               ]
                             }
                           },
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "path": {
                           "description": "Path is matched against the path of an incoming request. Currently it can contain characters disallowed from the conventional \"path\" part of a URL as defined by RFC 3986. Paths must begin with a '/'. When unspecified, all paths from incoming requests are matched.",
@@ -429,7 +436,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": "array"
                   }
@@ -440,13 +448,15 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               }
             },
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -482,7 +492,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -493,7 +504,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "status": {
       "description": "IngressStatus describe the current state of the Ingress.",
@@ -524,7 +536,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "type": [
                 "array",
@@ -535,13 +548,15 @@
           "type": [
             "object",
             "null"
-          ]
+          ],
+          "additionalProperties": false
         }
       },
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "type": "object",
@@ -552,5 +567,6 @@
       "version": "v1beta1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

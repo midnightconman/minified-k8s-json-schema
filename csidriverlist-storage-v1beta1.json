@@ -177,7 +177,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -243,7 +244,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -277,7 +279,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "spec": {
             "description": "CSIDriverSpec is the specification of a CSIDriver.",
@@ -310,7 +313,8 @@
                 ]
               }
             },
-            "type": "object"
+            "type": "object",
+            "additionalProperties": false
           }
         },
         "required": [
@@ -326,7 +330,8 @@
             "kind": "CSIDriver",
             "version": "v1beta1"
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "type": [
         "array",
@@ -379,7 +384,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -393,5 +399,6 @@
       "version": "v1beta1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

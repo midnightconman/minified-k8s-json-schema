@@ -171,7 +171,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -237,7 +238,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -271,7 +273,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "spec": {
             "description": "NodeSpec describes the attributes that a node is created with.",
@@ -317,13 +320,15 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "externalID": {
                 "description": "Deprecated. Not all kubelets will set this field. Remove field after 1.13. see: https://issues.k8s.io/61966",
@@ -396,7 +401,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -414,7 +420,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "status": {
             "description": "NodeStatus is information about the current status of a node.",
@@ -440,7 +447,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -546,7 +554,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -599,13 +608,15 @@
                         "type": [
                           "object",
                           "null"
-                        ]
+                        ],
+                        "additionalProperties": false
                       }
                     },
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   },
                   "assigned": {
                     "description": "NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.",
@@ -648,13 +659,15 @@
                         "type": [
                           "object",
                           "null"
-                        ]
+                        ],
+                        "additionalProperties": false
                       }
                     },
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   },
                   "error": {
                     "description": "Error describes any problems reconciling the Spec.ConfigSource to the Active config. Errors may occur, for example, attempting to checkpoint Spec.ConfigSource to the local Assigned record, attempting to checkpoint the payload associated with Spec.ConfigSource, attempting to load or validate the Assigned config, etc. Errors may occur at different points while syncing config. Earlier errors (e.g. download or checkpointing errors) will not result in a rollback to LastKnownGood, and may resolve across Kubelet retries. Later errors (e.g. loading or validating a checkpointed config) will result in a rollback to LastKnownGood. In the latter case, it is usually possible to resolve the error by fixing the config assigned in Spec.ConfigSource. You can find additional information for debugging by searching the error message in the Kubelet log. Error is a human-readable description of the error state; machines can check whether or not Error is empty, but should not rely on the stability of the Error text across Kubelet versions.",
@@ -704,19 +717,22 @@
                         "type": [
                           "object",
                           "null"
-                        ]
+                        ],
+                        "additionalProperties": false
                       }
                     },
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "daemonEndpoints": {
                 "description": "NodeDaemonEndpoints lists ports opened by daemons running on the Node.",
@@ -736,13 +752,15 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "images": {
                 "description": "List of container images on this node",
@@ -774,7 +792,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -840,7 +859,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "phase": {
                 "description": "NodePhase is the recently observed lifecycle phase of the node. More info: https://kubernetes.io/docs/concepts/nodes/node/#phase The field is never populated, and now is deprecated.",
@@ -870,7 +890,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -894,7 +915,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           }
         },
         "type": [
@@ -907,7 +929,8 @@
             "kind": "Node",
             "version": "v1"
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "type": [
         "array",
@@ -960,7 +983,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -974,5 +998,6 @@
       "version": "v1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

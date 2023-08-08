@@ -171,7 +171,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -237,7 +238,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -271,7 +273,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "spec": {
             "description": "ServiceSpec describes the attributes that a user creates on a service.",
@@ -407,7 +410,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -466,13 +470,15 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "topologyKeys": {
                 "description": "topologyKeys is a preference-order list of topology keys which implementations of services should use to preferentially sort endpoints when accessing this Service, it can not be used at the same time as externalTrafficPolicy=Local. Topology keys must be valid label keys and at most 16 keys may be specified. Endpoints are chosen based on the first topology key with available backends. If this field is specified and all entries have no backends that match the topology of the client, the service has no backends for that client and connections should fail. The special value \"*\" may be used to mean \"any topology\". This catch-all value, if used, only makes sense as the last value in the list. If this is not specified or empty, no topology constraints will be applied.",
@@ -498,7 +504,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "status": {
             "description": "ServiceStatus represents the current status of a service.",
@@ -529,7 +536,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -540,13 +548,15 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               }
             },
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           }
         },
         "type": [
@@ -559,7 +569,8 @@
             "kind": "Service",
             "version": "v1"
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "type": [
         "array",
@@ -612,7 +623,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -626,5 +638,6 @@
       "version": "v1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

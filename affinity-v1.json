@@ -46,7 +46,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -87,7 +88,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -95,7 +97,8 @@
                     ]
                   }
                 },
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "weight": {
                 "description": "Weight associated with matching the corresponding nodeSelectorTerm, in the range 1-100.",
@@ -110,7 +113,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -159,7 +163,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -200,7 +205,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -211,7 +217,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "type": "array"
             }
@@ -222,13 +229,15 @@
           "type": [
             "object",
             "null"
-          ]
+          ],
+          "additionalProperties": false
         }
       },
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "podAffinity": {
       "description": "Pod affinity is a group of inter pod affinity scheduling rules.",
@@ -280,7 +289,8 @@
                           "type": [
                             "object",
                             "null"
-                          ]
+                          ],
+                          "additionalProperties": false
                         },
                         "type": [
                           "array",
@@ -304,7 +314,8 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   },
                   "namespaces": {
                     "description": "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
@@ -327,7 +338,8 @@
                 "required": [
                   "topologyKey"
                 ],
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "weight": {
                 "description": "weight associated with matching the corresponding podAffinityTerm, in the range 1-100.",
@@ -342,7 +354,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -393,7 +406,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -417,7 +431,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "namespaces": {
                 "description": "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
@@ -443,7 +458,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -454,7 +470,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "podAntiAffinity": {
       "description": "Pod anti affinity is a group of inter pod anti affinity scheduling rules.",
@@ -506,7 +523,8 @@
                           "type": [
                             "object",
                             "null"
-                          ]
+                          ],
+                          "additionalProperties": false
                         },
                         "type": [
                           "array",
@@ -530,7 +548,8 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   },
                   "namespaces": {
                     "description": "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
@@ -553,7 +572,8 @@
                 "required": [
                   "topologyKey"
                 ],
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "weight": {
                 "description": "weight associated with matching the corresponding podAffinityTerm, in the range 1-100.",
@@ -568,7 +588,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -619,7 +640,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -643,7 +665,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "namespaces": {
                 "description": "namespaces specifies which namespaces the labelSelector applies to (matches against); null or empty list means \"this pod's namespace\"",
@@ -669,7 +692,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -680,9 +704,11 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "type": "object",
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

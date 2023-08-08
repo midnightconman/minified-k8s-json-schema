@@ -171,7 +171,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -237,7 +238,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -271,7 +273,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "spec": {
             "description": "PodSecurityPolicySpec defines the policy enforced.",
@@ -299,7 +302,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -335,7 +339,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -365,7 +370,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -457,7 +463,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -472,7 +479,8 @@
                     ]
                   }
                 },
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "hostIPC": {
                 "description": "hostIPC determines if the policy allows the use of HostIPC in the pod spec.",
@@ -518,7 +526,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -578,7 +587,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -596,7 +606,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "runAsUser": {
                 "description": "RunAsUserStrategyOptions defines the strategy type and any options used to create the strategy.",
@@ -624,7 +635,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -639,7 +651,8 @@
                 "required": [
                   "rule"
                 ],
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "runtimeClass": {
                 "description": "RuntimeClassStrategyOptions define the strategy that will dictate the allowable RuntimeClasses for a pod.",
@@ -668,7 +681,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "seLinux": {
                 "description": "SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.",
@@ -712,13 +726,15 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "required": [
                   "rule"
                 ],
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "supplementalGroups": {
                 "description": "SupplementalGroupsStrategyOptions defines the strategy type and options used to create the strategy.",
@@ -746,7 +762,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": [
                       "array",
@@ -761,7 +778,8 @@
                     ]
                   }
                 },
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               },
               "volumes": {
                 "description": "volumes is a white list of allowed volume plugins. Empty indicates that no volumes may be used. To allow all volumes you may use '*'.",
@@ -786,7 +804,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           }
         },
         "type": [
@@ -799,7 +818,8 @@
             "kind": "PodSecurityPolicy",
             "version": "v1beta1"
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "type": [
         "array",
@@ -852,7 +872,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -866,5 +887,6 @@
       "version": "v1beta1"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

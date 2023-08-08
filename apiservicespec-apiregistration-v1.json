@@ -60,7 +60,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "version": {
       "description": "Version is the API version this server hosts.  For example, \"v1\"",
@@ -83,5 +84,6 @@
     "versionPriority"
   ],
   "type": "object",
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

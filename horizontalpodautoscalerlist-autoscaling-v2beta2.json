@@ -177,7 +177,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -243,7 +244,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -277,7 +279,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "spec": {
             "description": "HorizontalPodAutoscalerSpec describes the desired functionality of the HorizontalPodAutoscaler.",
@@ -316,7 +319,8 @@
                           "type": [
                             "object",
                             "null"
-                          ]
+                          ],
+                          "additionalProperties": false
                         },
                         "type": [
                           "array",
@@ -342,7 +346,8 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   },
                   "scaleUp": {
                     "description": "HPAScalingRules configures the scaling behavior for one direction. These Rules are applied after calculating DesiredReplicas from metrics for the HPA. They can limit the scaling velocity by specifying scaling policies. They can prevent flapping by specifying the stabilization window, so that the number of replicas is not set instantly, instead, the safest value from the stabilization window is chosen.",
@@ -375,7 +380,8 @@
                           "type": [
                             "object",
                             "null"
-                          ]
+                          ],
+                          "additionalProperties": false
                         },
                         "type": [
                           "array",
@@ -401,13 +407,15 @@
                     "type": [
                       "object",
                       "null"
-                    ]
+                    ],
+                    "additionalProperties": false
                   }
                 },
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "maxReplicas": {
                 "description": "maxReplicas is the upper limit for the number of replicas to which the autoscaler can scale up. It cannot be less that minReplicas.",
@@ -468,7 +476,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -492,13 +501,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "target": {
                           "description": "MetricTarget defines the target value, average value, or average utilization of a specific metric",
@@ -551,7 +562,8 @@
                           "required": [
                             "type"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -561,7 +573,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "object": {
                       "description": "ObjectMetricSource indicates how to scale on a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).",
@@ -589,7 +602,8 @@
                             "kind",
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "metric": {
                           "description": "MetricIdentifier defines the name and optionally selector for a metric",
@@ -637,7 +651,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -661,13 +676,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "target": {
                           "description": "MetricTarget defines the target value, average value, or average utilization of a specific metric",
@@ -720,7 +737,8 @@
                           "required": [
                             "type"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -731,7 +749,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "pods": {
                       "description": "PodsMetricSource indicates how to scale on a metric describing each pod in the current scale target (for example, transactions-processed-per-second). The values will be averaged together before being compared to the target value.",
@@ -782,7 +801,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -806,13 +826,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "target": {
                           "description": "MetricTarget defines the target value, average value, or average utilization of a specific metric",
@@ -865,7 +887,8 @@
                           "required": [
                             "type"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -875,7 +898,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "resource": {
                       "description": "ResourceMetricSource indicates how to scale on a resource metric known to Kubernetes, as specified in requests and limits, describing each pod in the current scale target (e.g. CPU or memory).  The values will be averaged together before being compared to the target.  Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source.  Only one \"target\" type should be set.",
@@ -935,7 +959,8 @@
                           "required": [
                             "type"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -945,7 +970,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": {
                       "description": "type is the type of metric source.  It should be one of \"Object\", \"Pods\" or \"Resource\", each mapping to a matching field in the object.",
@@ -958,7 +984,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -996,7 +1023,8 @@
                   "kind",
                   "name"
                 ],
-                "type": "object"
+                "type": "object",
+                "additionalProperties": false
               }
             },
             "required": [
@@ -1006,7 +1034,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "status": {
             "description": "HorizontalPodAutoscalerStatus describes the current status of a horizontal pod autoscaler.",
@@ -1054,7 +1083,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": "array"
               },
@@ -1110,7 +1140,8 @@
                               ]
                             }
                           },
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "metric": {
                           "description": "MetricIdentifier defines the name and optionally selector for a metric",
@@ -1158,7 +1189,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -1182,13 +1214,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -1198,7 +1232,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "object": {
                       "description": "ObjectMetricStatus indicates the current value of a metric describing a kubernetes object (for example, hits-per-second on an Ingress object).",
@@ -1247,7 +1282,8 @@
                               ]
                             }
                           },
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "describedObject": {
                           "description": "CrossVersionObjectReference contains enough information to let you identify the referred resource.",
@@ -1272,7 +1308,8 @@
                             "kind",
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "metric": {
                           "description": "MetricIdentifier defines the name and optionally selector for a metric",
@@ -1320,7 +1357,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -1344,13 +1382,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -1361,7 +1401,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "pods": {
                       "description": "PodsMetricStatus indicates the current value of a metric describing each pod in the current scale target (for example, transactions-processed-per-second).",
@@ -1410,7 +1451,8 @@
                               ]
                             }
                           },
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "metric": {
                           "description": "MetricIdentifier defines the name and optionally selector for a metric",
@@ -1458,7 +1500,8 @@
                                     "type": [
                                       "object",
                                       "null"
-                                    ]
+                                    ],
+                                    "additionalProperties": false
                                   },
                                   "type": [
                                     "array",
@@ -1482,13 +1525,15 @@
                               "type": [
                                 "object",
                                 "null"
-                              ]
+                              ],
+                              "additionalProperties": false
                             }
                           },
                           "required": [
                             "name"
                           ],
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         }
                       },
                       "required": [
@@ -1498,7 +1543,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "resource": {
                       "description": "ResourceMetricStatus indicates the current value of a resource metric known to Kubernetes, as specified in requests and limits, describing each pod in the current scale target (e.g. CPU or memory).  Such metrics are built in to Kubernetes, and have special scaling options on top of those available to normal per-pod metrics using the \"pods\" source.",
@@ -1547,7 +1593,8 @@
                               ]
                             }
                           },
-                          "type": "object"
+                          "type": "object",
+                          "additionalProperties": false
                         },
                         "name": {
                           "description": "Name is the name of the resource in question.",
@@ -1561,7 +1608,8 @@
                       "type": [
                         "object",
                         "null"
-                      ]
+                      ],
+                      "additionalProperties": false
                     },
                     "type": {
                       "description": "type is the type of metric source.  It will be one of \"Object\", \"Pods\" or \"Resource\", each corresponds to a matching field in the object.",
@@ -1574,7 +1622,8 @@
                   "type": [
                     "object",
                     "null"
-                  ]
+                  ],
+                  "additionalProperties": false
                 },
                 "type": [
                   "array",
@@ -1616,7 +1665,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           }
         },
         "type": [
@@ -1629,7 +1679,8 @@
             "kind": "HorizontalPodAutoscaler",
             "version": "v2beta2"
           }
-        ]
+        ],
+        "additionalProperties": false
       },
       "type": [
         "array",
@@ -1682,7 +1733,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -1696,5 +1748,6 @@
       "version": "v2beta2"
     }
   ],
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

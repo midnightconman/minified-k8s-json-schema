@@ -63,7 +63,8 @@
             "type": [
               "object",
               "null"
-            ]
+            ],
+            "additionalProperties": false
           },
           "type": [
             "array",
@@ -87,7 +88,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "target": {
       "description": "CrossVersionObjectReference contains enough information to let you identify the referred resource.",
@@ -115,7 +117,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "targetValue": {
       "oneOf": [
@@ -140,5 +143,6 @@
     "targetValue"
   ],
   "type": "object",
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }

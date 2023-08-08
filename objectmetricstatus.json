@@ -48,7 +48,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "describedObject": {
       "description": "CrossVersionObjectReference contains enough information to let you identify the referred resource.",
@@ -76,7 +77,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     },
     "metric": {
       "description": "MetricIdentifier defines the name and optionally selector for a metric",
@@ -124,7 +126,8 @@
                 "type": [
                   "object",
                   "null"
-                ]
+                ],
+                "additionalProperties": false
               },
               "type": [
                 "array",
@@ -148,7 +151,8 @@
           "type": [
             "object",
             "null"
-          ]
+          ],
+          "additionalProperties": false
         }
       },
       "required": [
@@ -157,7 +161,8 @@
       "type": [
         "object",
         "null"
-      ]
+      ],
+      "additionalProperties": false
     }
   },
   "required": [
@@ -166,5 +171,6 @@
     "describedObject"
   ],
   "type": "object",
+  "additionalProperties": false,
   "$schema": "http://json-schema.org/schema#"
 }
